@@ -10,7 +10,7 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*Neotro වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
+let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*Lusifar වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
 let inmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයක් ඉවත් කරන්න* ❌'
 
 const heroku = new Heroku({
