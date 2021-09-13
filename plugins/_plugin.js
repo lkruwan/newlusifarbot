@@ -70,7 +70,7 @@ Asena.addCommand({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (as
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('Neotro23') ? msg : inmsg
+                let vf = plugin.dataValues.url.includes('lkruwan') ? msg : inmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
