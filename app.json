@@ -152,6 +152,11 @@
             "description": "Customizable Kickme Message! Use => default, to change back.",
             "required": false,
             "value": "default"
+       },
+        "ANTIBAD": {
+            "description": "Activate Anti-Bad word for your groups.",
+            "required": true,
+            "value": "false"     
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
