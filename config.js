@@ -1,8 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
@@ -56,6 +51,7 @@ module.exports = {
     GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     TAGPLK: process.env.TAG_HEADER === undefined ? 'Note this' : process.env.TAG_HEADER,
+    ANTIBAD: process.env.ANTIBAD === undefined ? 'false' : process.env.ANTIBAD,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     YAK: process.env.YAK === undefined ? '918921483992,0' : process.env.YAK,
     BRANCH: 'master',
@@ -75,3 +71,4 @@ module.exports = {
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
 };
+
