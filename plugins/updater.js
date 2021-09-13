@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const simpleGit = require('simple-git');
 const git = simpleGit();
 const Asena = require('../events');
@@ -89,7 +81,7 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid,'*❌ Güncelleme başarısız oldu!*\n*Hata:* ```' + err + '```', MessageType.text);
+                        message.jid,'*❌ හෙරොකු API Key වෙනස් වී ඇත*\n*දෝෂ වාර්තාව:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();
