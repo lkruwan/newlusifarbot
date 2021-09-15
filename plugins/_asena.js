@@ -465,7 +465,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     })); 
 
-    Asena.addCommand({pattern: 'lussa ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lusifar ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
         
         var CMD_HELP = '';
         if (match[1] === '') {
